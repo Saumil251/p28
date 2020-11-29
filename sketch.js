@@ -18,7 +18,7 @@ function setup() {
 
   //Create the Bodies Here.
   boy= new Boy(200,650)
-tree= new Tree(600,450)
+tree= new Tree(450,450)
 stone1=new Stone(100,575)
 chain1=new Chain(stone1.body,{x:100,y:575})
 mango1=new Mango(700,350)
