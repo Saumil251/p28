@@ -1,9 +1,12 @@
 function detectollision(stone1,mango1){
 
-    if(stone1.x-mango1.x < (stone1.width+mango1.width)/2 &&
-    mango1.x-stone1.x < (stone1.width+mango1.width)/2 &&
-    stone1.y-mango1.y < (stone1.height+mango1.height)/2 &&
-    mango1.y-stone1.y < (stone1.height+mango1.height)/2 )
+    stonepos=stone1.body.position;
+    mangopos=mango1.body.position
+
+    if(stonepos.x-mangopos.x < (stone1.width+mango1.width)/2 &&
+    mangopos.x-stonepos.x < (stone1.width+mango1.width)/2 &&
+    stonepos.y-mangopos.y < (stone1.height+mango1.height)/2 &&
+    mangopos.y-stonepos.y < (stone1.height+mango1.height)/2 )
 {
 Matter.Body.setStatic(mango1.body,false)
 
